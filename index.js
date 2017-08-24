@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
 })
 
 app.get('/text', function(request, response) {
-  response.send('https://s3.us-east-2.amazonaws.com/rosefieldetextbook/KIC+Document.pdf')
+  response.send('The textbook is available at: https://s3.us-east-2.amazonaws.com/rosefieldetextbook/KIC+Document.pdf\nThis text is uploaded for academic use for students in Illirik Smirnov\'s study group for ECON468 at UNC-Chapel Hill during the Spring 2017 semester. Use of this copyrighted textbook for noncommercial academic use is fair use under the guidelines promulgated by the US Patent and Trademark Office. These guidelines allow for digitization of an analog document legally acquired when no digital version is readily available at a fair price. The use of this copyrighted work for study outside of the classroom constitutes an educational use, as "planned noncommercial study or investigation directed toward making a contribution to a field of knowledge".')
 })
 
 app.listen(app.get('port'), function() {
