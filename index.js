@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
 })
 
 app.get('/text', function(request, response) {
-  response.redirect(301, 'https://s3.us-east-2.amazonaws.com/rosefieldetextbook/KIC+Document.pdf')
+  response.send('https://s3.us-east-2.amazonaws.com/rosefieldetextbook/KIC+Document.pdf')
 })
 
 app.listen(app.get('port'), function() {
